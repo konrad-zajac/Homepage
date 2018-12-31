@@ -2,9 +2,10 @@
 
 ##V0.0.0
 
-* init
-* converted contact and about sections from PHP to plain HTML 
+* Init
+* Converted contact and about sections from PHP to plain HTML 
 
 ##V0.0.1
 
-* footer to HTML
+* Converted all PHP to HTML
+* New German certificate
