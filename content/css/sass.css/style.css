@@ -1,0 +1,32 @@
+body {
+  text-align: center; }
+
+table {
+  font-size: 1vw;
+  border-radius: 5px;
+  float: none; }
+
+.table_step {
+  width: 5%; }
+
+code {
+  color: green;
+  background-color: black; }
+
+p {
+  margin: 5% 0 0 0;
+  width: 102%;
+  font-size: 1vw; }
+
+.w_petli {
+  text-align: left;
+  padding: 0 0 0 5%; }
+
+.kod {
+  background-color: black; }
+
+.prime_kod {
+  width: 55%;
+  text-align: left; }
+
+/*# sourceMappingURL=style.css.map */

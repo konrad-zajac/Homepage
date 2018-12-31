@@ -1,0 +1,113 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $wczesnie = $.now();
+
+
+                $("button").click(function(){
+                    $pozno = $.now();
+                    $teraz = $pozno - $wczesnie ;
+                    alert("zakonczono w " + Math.round($teraz/10)/100 + "sekund");
+                })});
+
+        </script>
+		<link rel="stylesheet" type="text/css" href="../test.css">
+    </head>
+    <body>
+
+    <div style="margin-left: 40%" class="container">
+
+        <h1 style="margin-left: 16%; ">Test 3b</h1>
+        <h2 style="margin-right: 50%"> polega na porownaniu efektywnosci </h2>
+        <h3 style="margin-left: -0.5%">formularzy w jednej kolumnie.</h3>
+		<h4>(etykiety wyjustowane do prewej)</h4>
+
+    </div>
+    <div style="margin-left: 45%" class="container">
+
+
+        <form>
+		
+		
+                <label class="forml" >imie:</label>
+				</br>
+            <div class="form-group">
+                <input style="width: 20%" type="email" class="form-control" id="email">
+            </div>
+		
+		
+            <div class="form-group">
+                <label class="forml"for="pwd">Nazwisko:</label>
+                <input style="width: 20%" type="password" class="form-control" id="pwd">
+            </div>
+		
+		
+		
+		
+            <div class="form-group">
+                <label class="forml" for="email"> email:</label>
+                <input style="width: 20%" type="email" class="form-control" id="email">
+            </div>
+		
+		
+            <div class="form-group">
+                <label class="forml" for="pwd">telefon:</label>
+                <input style="width: 20%" type="password" class="form-control" id="pwd">
+            </div>
+		
+		
+		
+		
+            <div class="form-group">
+                <label class="forml"for="email">miasto:</label>
+                <input style="width: 20%" type="email" class="form-control" id="email">
+            </div>
+		
+		
+            <div class="form-group">
+                <label class="forml"for="pwd">kod pocztowy:</label>
+                <input style="width: 20%" type="password" class="form-control" id="pwd">
+            </div>
+		
+		
+
+
+
+
+            <button class="submit" id="submit" type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+        <a style="margin-left: 11%;
+            margin-top: 40px"
+           href='test3c.html'
+           class="btn btn-lg btn-success mar">
+            <b>test 3c </b>
+            <i class="glyphicon glyphicon-arrow-right">
+            </i>
+
+        </a>
+
+    </div>
+    </body>
+
+    </html>

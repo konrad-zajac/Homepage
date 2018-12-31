@@ -1,0 +1,268 @@
+@font-face
+{
+    font-family: Bavro pro;
+    src: url(../../src/2.fonty/Bavro.otf);
+}
+.box {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    width: 600px;
+    height: 420px;
+    background: none;
+}
+.circle {
+    width: 60%;
+    height: 80%;
+    left: 22%;
+    top: -10%;
+    position: absolute;
+    border-radius: 50%;
+    background: #036F74;
+}
+.left-eye {
+    background: #000;
+    position: absolute;
+    width: 5%;
+    height: 8%;
+    border-radius: 50%;
+    left: 44%;
+    top: 15%;
+    z-index: 6;
+}
+.right-eye {
+    background: #000;
+    position: absolute;
+    width: 5%;
+    height: 8%;
+    border-radius: 50%;
+    right: 42%;
+    top: 15%;
+    z-index: 6;
+}
+
+.pupil {
+    width: 40%;
+    height: 40%;
+    background: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+
+.nose {
+    position: absolute;
+    width: 3%;
+    height: 3%;
+    top: 25%;
+    left: 50%;
+    z-index: 6;
+    background: #FF6DCA;
+    border-radius: 40%;
+}
+
+.left-whisker1 {
+    width: 10%;
+    transform: rotate(10deg);
+    height: 3px;
+    top: 24%;
+    left: 32%;
+    z-index: 6;
+    background: #000;
+    position: absolute;
+}
+.left-whisker2 {
+    width: 10%;
+    transform: rotate(0deg);
+    height: 3px;
+    top: 27%;
+    left: 32%;
+    z-index: 6;
+    background: #000;
+    position: absolute;
+}
+
+.left-whisker3 {
+    width: 10%;
+    transform: rotate(-10deg);
+    height: 3px;
+    top: 30%;
+    left: 32%;
+    z-index: 6;
+    background: #000;
+    position: absolute;
+}
+
+.right-whisker1 {
+    width: 10%;
+    transform: rotate(-10deg);
+    height: 3px;
+    top: 24%;
+    right: 30%;
+    z-index: 6;
+    background: #000;
+    position: absolute;
+}
+.right-whisker2 {
+    width: 10%;
+    transform: rotate(0deg);
+    height: 3px;
+    top: 27%;
+    right: 30%;
+    z-index: 6;
+    background: #000;
+    position: absolute;
+}
+
+.right-whisker3 {
+    width: 10%;
+    transform: rotate(10deg);
+    height: 3px;
+    top: 30%;
+    right: 30%;
+    z-index: 6;
+    background: #000;
+    position: absolute;
+}
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica,  sans-serif;
+    z-index: 6;
+    position: absolute;
+    color: #FCFF92;
+    left: 38%;
+    top: 35%;
+    letter-spacing: 4px;
+    font-size: 28pt;
+}
+h2 {
+    font-family:"Helvetica Neue", Helvetica, sans-serif;
+    z-index: 6;
+    position: absolute;
+    color: #000;
+    font-size: 14pt;
+    left: 33%;
+    top: 45%;
+    letter-spacing: 4px;
+}
+.taco {
+    top: 16.5%;
+    left: 35%;
+    background: #F5CE4A;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border-radius: 100px 100px 0px 0px;
+    top: 10%;
+    z-index: 5;
+    -webkit-box-shadow: -1px 15px 23px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 15px 23px -10px rgba(0,0,0,0.75);
+    box-shadow: -1px 15px 23px -10px rgba(0,0,0,0.75);
+}
+
+.left-ear {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #F5CE4A;
+    position: absolute;
+    transform: rotate(-35deg);
+    left: 37%;
+    top: 8%;
+    z-index: 6;
+}
+.right-ear {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #F5CE4A;
+    position: absolute;
+    transform: rotate(40deg);
+    right: 32%;
+    top: 8%;
+    z-index: 6;
+}
+
+.meat1 {
+    background: #743B03;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    top: 10%;
+    left: 40%;
+    z-index: 4;
+}
+.meat2 {
+    background: #743B03;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    top: 8%;
+    left: 50%;
+    z-index: 4;
+}
+.meat3 {
+    background: #743B03;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    top: 16%;
+    left: 59%;
+    z-index: 4;
+}
+.lettuce1 {
+    background: #0A7403;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    top: 7%;
+    left: 45%;
+}
+.lettuce2 {
+    background: #0A7403;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    top: 17%;
+    left: 35%;
+}
+.lettuce3 {
+    background: #0A7403;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    top: 10%;
+    left: 55%;
+}
+.tomato1 {
+    background: #FF0000;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 15%;
+    left: 38%;
+    z-index: 4;
+}
+.tomato2 {
+    background: #FF0000;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 12%;
+    left: 58%;
+    z-index: 4;
+}
+

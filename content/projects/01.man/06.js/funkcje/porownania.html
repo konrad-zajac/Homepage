@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+<script>
+</script>
+<style>
+
+.podzialka
+{
+background-color:rgb(55,124,181);
+border: 2px solid black
+}
+.table,
+	thead,
+	td,
+	tr,
+	tbody,
+	th
+{
+	width:5%;
+	text-align:center;
+
+}
+</style>
+
+
+	<body>
+		<div class="container">
+			<table  class="table-bordered">
+
+			<thead>	<thead>
+				<tr>
+					<th>Lewy operator</th>
+					<th>Porownanie</th>
+					<th>Prawy operator</th>
+					<th>Przycisk</th>
+					<th>Komentarz</th>
+				</tr>
+			</thead>
+				<tr>
+					<th>5</th>
+					<th>==</th>
+					<th>5</th>
+					<th>true</th>
+					<th>---</th>
+				</tr>
+				<tr >
+					<th>"5"</th>
+					<th>==</th>
+					<th>5</th>
+					<th>true</th>
+					<th>string zostanie automatycznie przekonwertowany na inta</th>
+				</tr>
+				<tr >
+					<th>"5"</th>
+					<th>===</th>
+					<th>5</th>
+					<th>false</th>
+					<th>operator === sprawdza zgodność wartości oraz typu</th>
+				</tr>
+				<tr >
+					<th>"5"</th>
+					<th>!==</th>
+					<th>5</th>
+					<th>true</th>
+					<th>operator !== sprawdza zgodność wartości oraz typu</th>
+				</tr>
+				<tr>
+					<th style="border: 2px solid black;" colspan="5" class="podzialka" >null i undedined</th>
+				</tr>
+				<tr>
+					<th>null</th>
+					<th>==</th>
+					<th>undefined</th>
+					<th>true</th>
+					<th>tu nie ma reguły</th>
+				</tr>
+				<tr>
+					<th>"null"</th>
+					<th>==</th>
+					<th>undefined</th>
+					<th>false</th>
+					<th>---</th>
+				</tr>
+				<tr>
+					<th>null</th>
+					<th>==</th>
+					<th>"undefined"</th>
+					<th>false</th>
+					<th>---</th>
+				</tr>
+				<tr>
+					<th>null</th>
+					<th>!==</th>
+					<th>undefined</th>
+					<th>true</th>
+					<th>tu nie ma reguł</th>
+				</tr>
+
+				<tr>
+					<th  class="podzialka" colspan="5" class="podzialka" >0 i null</th>
+				</tr>
+				<tr>
+					<th>0</th>
+					<th>==</th>
+					<th>null</th>
+					<th>false</th>
+					<th>---</th>
+				</tr>
+				<tr>
+					<th  colspan="5" class="podzialka" >NaN i NaN</th>
+				</tr>
+				<tr>
+					<th>NaN</th>
+					<th>==</th>
+					<th>NaN</th>
+					<th>false</th>
+					<th>---</th>
+				</tr>
+				<tr>
+					<th  colspan="5" class="podzialka" >Infinity</th>
+				</tr>
+				<tr>
+					<th>Infinity</th>
+					<th>==</th>
+					<th>-Infinity</th>
+					<th>false</th>
+					<th>---</th>
+				</tr>
+				<tr>
+					<th>Infinity</th>
+					<th>==</th>
+					<th>(Infinity + 1)</th>
+					<th>true</th>
+					<th>---</th>
+				</tr>
+				<tr>
+					<th>Infinity</th>
+					<th>===</th>
+					<th>(Infinity + 1)</th>
+					<th>true</th>
+					<th>---</th>
+				</tr>
+				<tr>
+					<th>Infinity</th>
+					<th>==</th>
+					<th>(Infinity * 2)</th>
+					<th>true</th>
+					<th>---</th>
+				</tr>
+				<tr>
+					<th>Infinity</th>
+					<th>===</th>
+					<th>(Infinity * 2)</th>
+					<th>true</th>
+					<th>---</th>
+				</tr>
+				<tr>
+					<th>Infinity</th>
+					<th>/</th>
+					<th>Infinity</th>
+					<th>NaN</th>
+					<th>---</th>
+				</tr>
+
+			</table>
+		</div>
+	</body>

@@ -1,0 +1,66 @@
+.tabela
+{
+    table-layout: fixed;
+
+}
+.impof
+ {
+    background-color: yellow;
+ }
+ .impof_table_left
+ {
+    border-left: 2px solid black;
+ }
+ .impof_table_right
+ {
+   border-right: 2px solid black;
+ }
+ .importance
+ {
+     border-top: 2px solid black;
+     border-right: 2px solid black;
+     border-left: 2px solid black;
+     text-align: center;
+     color: #FFF;
+     background-color: #000;
+
+ }
+
+ .operation_hours
+ {
+     background-color: #88eaea;
+     width: 200px;
+     padding:0px;
+
+
+ }
+.ttt
+{
+	   border-bottom: 5px solid black;
+}
+.tc
+{
+	text-align: center;
+}
+.naglowek_tabeli
+{
+    text-align: center;
+    color: white;
+}
+.komorka_w_liscie
+{
+border: solid black 1px;
+    border-radius: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+
+}
+.glyphicon
+{
+    padding-right: 5px
+}
+tr.hover {
+    cursor: pointer;
+    /* whatever other hover styles you want */
+}

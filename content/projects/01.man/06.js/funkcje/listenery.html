@@ -1,0 +1,202 @@
+	<!DOCTYPE html>
+	<html>
+<head>
+	<meta charset="utf8">
+	<link type="text/css" href="../style.css" rel="stylesheet">
+</head>
+
+
+	<body>
+		<div class="container">
+		<table  class="table-bordered table-striped">
+			<thead>
+				<tr>
+				<th>L.p.</th>
+					<th>Przycisk</th>
+					<th>Komentarz</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>
+				1
+				</td>
+				<td>
+				<button onclick=
+			alert("onclick");
+				>onclick</button>
+				</td>
+
+				<td>
+				atrybut onclick oczekuje na klikniecie.
+				</td>
+			</tr>
+			<tr>
+			<td>
+				2
+				</td>
+
+				<td oncontextmenu =
+			alert("oncontextmenu");>
+			oncontextmenu
+				</td>
+
+				<td>
+				atrybut oncontextmenu oczekuje na klikniecie w obszar drugim klawiszem myszy.
+				</td>
+			</tr>
+			<tr>
+			<td>
+				3
+				</td>
+				<td ondblclick=
+			alert("ondblclick");>
+				ondblclick
+				</td>
+
+				<td>
+				atrybut ondblclick oczekuje na podwojneklikniecie w obszar .
+				</td>
+			</tr>
+			<tr>
+			<td>
+				4
+				</td>
+				<td onmousedown=
+			alert("onmousedown");>
+				onmousedown
+				</td>
+
+				<td>
+				atrybut onmousedown oczekuje na naciśniecie myszy .
+				</td>
+			</tr>
+			<tr>
+			<td>
+				5
+				</td>
+				<td onmouseenter=
+			alert("onmouseenter");>
+				onmouseenter
+				</td>
+
+				<td>
+				atrybut onmouseenter oczekuje na "wejście" na obszar myszą.
+				</td>
+			</tr>
+			<!-- -->
+			<tr>
+			<td>
+				6
+				</td>
+				<td onmouseover=
+			alert("onmouseover");>
+				onmouseover
+				</td>
+
+				<td>
+				atrybut onmouseenter oczekuje na "wejście" na obszar, lub jego dzieci myszą.
+				</td>
+			</tr>
+			<tr>
+			<td>
+				7
+				</td>
+				<td onmouseover="style.backgroundColor='red'">
+					onmouseover
+				</td>
+
+				<td>
+				onmouseover czeka az kursor myszy znajdzie się na elemencie </br>
+				i zmienia element w od tego czasu.
+				</td>
+			</tr>
+
+			<tr>
+			<td>
+				8
+				</td>
+				<td onmouseover=
+			alert("onmouseleave");>
+				onmouseleave
+				</td>
+
+				<td>
+				atrybut onmouseleave oczekuje na "wyjście" z obszaru myszą.
+				</td>
+			</tr>
+			<!-- -->
+			<tr>
+
+			<td>
+				9
+				</td>
+				<td onmouseout=
+			alert("onmouseout");>
+				Obszar<span>Dziecko</span>
+				</td>
+
+				<td>
+				atrybut onmouseleave oczekuje na "wyjście" z obszaru<b>, lub jego dzieci</b> myszą.
+				</td>
+			</tr>
+			<!-- -->
+			<tr>
+			<td>
+				10
+				</td>
+				<td onmouseout=
+			alert("onmouseout");>
+				Obszar
+				</td>
+
+				<td>
+				atrybut  oczekuje na "wyjście" z obszaru, lub jego dzieci myszą.
+				</td>
+			</tr>
+			<!-- -->
+			<tr>
+
+			<td>
+				11
+				</td>
+				<td onmousemove=
+			alert("onmousemove");>
+				Obszar
+				</td>
+
+				<td>
+				atrybut onmousemove oczekuje na ruch na obszarze myszą.
+				</td>
+			</tr>
+
+			<!-- -->
+			<tr>
+
+			<td>
+				12
+				</td>
+
+				<td onmouseup=
+			alert("onmouseup");>
+				Obszar
+				</td>
+
+				<td>
+				atrybut onmouseup oczekuje na "podniesienie" myszy na obszarze.
+				</td>
+			</tr>
+
+			</table>
+		</div>
+	</body>
+<script>
+/////////////////////////////////////////////////////////////////////////////////////
+function kolor()
+{
+
+document.getElementById("demo").innerHTML =prompt();
+}
+</script>
+</body>
+</html>
+

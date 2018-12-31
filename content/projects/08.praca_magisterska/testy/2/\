@@ -1,0 +1,122 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<style>
+            .trzy
+            {
+                width: 25%;
+            }
+        </style>
+
+        <script>
+            $(document).ready(function () {
+                $wczesnie = $.now();
+
+
+                $("input").click(function(){
+                    $pozno = $.now();
+                    $teraz = $pozno - $wczesnie ;
+                    alert("zakonczono w " + Math.round($teraz/10)/100 + "sekund");
+                })});
+
+        </script>
+
+		<link rel="stylesheet" type="text/css" href="../test.css">
+    </head>
+    <body>
+
+    <div style="margin-left: 40%" class="container">
+
+        <h1 style="font-family: AHAMONO;margin-left: 16%; ">Test 2a</h1>
+        <h2 style="margin-right: 40%"> polega na porownaniu efektywnosci </h2>
+        <h3 style="margin-left: -0.5%">radio buttonow przy wyborze trzech kolorów</h3>
+
+
+    </div>
+    <div style="margin-left:18%" class="container">
+
+
+        <form style="margin-left:25%" id="myForm" method="post" action="test2a.html">
+            <table class="table-bordered">
+                <thead>
+                <tr>
+                    <td colspan="3" style="text-align: center">
+                        Wybierz swój ulubiony kolor.
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="dwa">Wybór</th>
+                    <th class="dwa" colspan="2">Kolor</th>
+
+                </tr>
+                </thead>
+
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        czerwony
+                    </td>
+                    <td class="trzy" style=" background-color: red ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" name="gender" value="male">
+                    </td>
+                    <td class="trzy">
+                        zielony
+                    </td>
+                    <td class="jeden" style="background-color: green">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" name="gender" value="male">
+                    </td>
+                    <td >
+                        niebieski
+                    </td>
+                    <td class="jeden" style="background-color: blue">
+                    </td>
+
+                </tr>
+
+
+
+
+            </table>
+        </form>
+
+        <a style="margin-left: 22%;
+            margin-top: 40px"
+           href='test2b.html'
+           class="btn btn-lg btn-success mar">
+            <b>test 2b </b>
+            <i class="glyphicon glyphicon-arrow-right">
+            </i>
+
+        </a>
+
+    </div>
+    </body>
+
+    </html>

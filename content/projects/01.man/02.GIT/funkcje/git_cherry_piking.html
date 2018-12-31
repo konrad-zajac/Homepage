@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+<div class="container">
+Cherry picking is the name of a function, which selects only the needed commits from another branch.
+    (notice that the sha changes on the selected branch)
+    <table  style="font-size: 12px" class="table table-bordered">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>1st argument</th>
+            <th>2nd argument</th>
+            <th>Option</th>
+            <th>Comment</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>
+                1
+            </td>
+
+            <td>
+                git
+            </td>
+
+            <td>
+                cherry-pick
+            </td>
+
+            <td style="background-color: black">
+            </td>
+
+
+
+            <td>
+                [sha of the commit]
+            </td>
+
+            <td>
+
+                Selects a specific commit.
+            </td>
+        </tr>
+        <!-- -->
+        <tr>
+            <td>
+                2
+            </td>
+
+            <td>
+                git
+            </td>
+
+            <td>
+                cherry-pick
+            </td>
+            <td>
+                --edit
+            </td>
+
+
+
+            <td>
+                [sha of the commit]
+            </td>
+
+            <td>
+                Allows for a different commit message
+                .
+            </td>
+        </tr>
+        <!-- -->
+        <!-- -->
+        <tr>
+            <td>
+                3
+            </td>
+
+            <td>
+                git
+            </td>
+
+            <td>
+                cherry-pick
+            </td>
+            <td>
+                --signoff
+            </td>
+
+
+
+            <td>
+                [sha of the commit]
+            </td>
+
+            <td>
+                Inserts the author who signed of the cherrypicking to the commit message.
+            </td>
+        </tr>
+        <!-- -->
+        <tr>
+            <td colspan="6" style="background-color:black;color:white;text-align: center">
+multiple cherry-pick
+            </td>
+        </tr>
+        <tr>
+            <td>
+                4
+            </td>
+
+            <td>
+                git
+            </td>
+
+            <td>
+                cherry-pick
+            </td>
+
+            <td >
+                --no-commit
+            </td>
+
+
+
+            <td>
+                [sha of the first commit] [sha of the second commit]
+            </td>
+
+            <td>
+
+                Selects two commits.
+            </td>
+        </tr>
+        <!-- -->
+        </tr>
+        <tr>
+            <td>
+                5
+            </td>
+
+            <td>
+                git
+            </td>
+
+            <td>
+                commit
+            </td>
+
+            <td >
+                -m
+            </td>
+
+
+
+            <td>
+                [ text of the joined commit ]
+            </td>
+
+            <td>
+
+                Selects two commits.
+            </td>
+        </tr>
+        <!-- -->
+
+
+    </table>
+</div>
+</div>
+
+</body>
+</html>
+

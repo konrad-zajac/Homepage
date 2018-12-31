@@ -1,0 +1,97 @@
+	<!DOCTYPE html>
+	<html>
+
+
+<body>
+<div class="container">
+	<table  class="table-bordered">
+	<thead>
+		<tr>
+			<th>L.p</th>
+			<th>Przycisk</th>
+			<th>Komentarz</th>
+		</tr>
+	</thead>
+		<tr>
+
+				<td>
+					1
+				</td>
+
+				<td>
+					<button class="btn btn-default btn-lg" onclick="m_ran()">Math.random()</button>
+				</td>
+
+				<td>
+					Ta funkcja generuje losową liczbe z zakresu od zera do podanej liczby, wyłączając ją.
+						</td>
+		</tr>
+		<!-- -->
+			<tr>
+				<td>
+					2
+				</td>
+
+				<td>
+					<button class="btn btn-default btn-lg" onclick="m_max()">Math.max</br> Math.min</button>
+				</td>
+
+				<td>
+	Funkcja zwraca wartość maksymalną ze zbioru 1 i 2
+				</td>
+		</tr>
+		<!-- -->
+			<tr>
+				<td>
+					3
+				</td>
+
+				<td>
+		<button class="btn btn-default btn-lg" onclick="m_rou()">Math.round()</button>
+				</td>
+
+				<td>
+	round zaokroągla zgodnie z zasadami matematycznymi.
+				</td>
+		</tr>
+		<!-- -->
+
+	</table>
+</div>
+</div>
+
+
+<script>
+/////////////////////////////////////////////////////////////////////////////////////
+function m_ran()
+{
+	var number = prompt("Podaj ile razy zwiekszycprzedial do losowania (domyslnie jest (0,1> )",1);
+    alert( Math.random() * number);
+}
+//czemu trzy kropki zadiałało?`
+function m_max()
+{
+
+	var numer = prompt(" Podaj element tablicy(po przecinku)");
+	var arr = numer.split(",");
+	console.log(arr);
+	var odpowiedz = prompt("max czy min?", "max");
+	if (odpowiedz == "max" )
+	{
+    alert( Math.max( ...arr ));
+	}
+	else
+	{
+    alert( Math.min( ...arr ));
+	}
+}
+function m_rou()
+{
+	var number = prompt("Podaj liczbe do zaokroglenia(Z KROPKĄ)");
+   alert( Math.round(number) );
+}
+</script>
+
+</body>
+</html>
+

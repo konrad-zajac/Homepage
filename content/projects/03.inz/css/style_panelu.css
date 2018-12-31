@@ -1,0 +1,25 @@
+.to_male,.to_duze {
+position: static;
+padding: 5px;
+text-align: center;
+background-color: #e5eecc;
+border: solid 1px #c3c3c3;
+}
+
+.to_duze
+{
+padding: 50px;
+display: none;
+height:163px;
+
+}
+.to_male
+{
+height:33px;
+
+}
+.glyphicon-one-fine-full-dot:before
+{
+    content:"\25cf";
+    font-size: 15px;
+}

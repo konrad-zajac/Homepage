@@ -1,0 +1,47 @@
+	<body>
+		<div class="container">
+			<table class="table table-striped table-bordered">
+				<thead>
+				  <tr>
+					<th scope="col">#</th>
+					<th scope="col">Code</th>
+					<th scope="col">Commentary</th>
+				  </tr>
+				</thead>
+				<tbody>
+				<tr>
+					<th colspan="3">Creating a new laravel project can be acompished using two methods</th>
+				</tr>
+				<tr>
+					<th>1</th>
+					<th>composer create-project laravel/laravel $NAME</th>
+					<th>This works after installing <a href="https://getcomposer.org/"> </a></th>
+				</tr>
+				  <tr>
+					<th>2</th>
+					<th>larval new $NAME</th>
+					<th>This solution is cleaner than the first one,</br>but it requires adding this "$PATH:$HOME/.composer/vendor/bin" to the system path.</th>
+					 </tr>
+				<tr>
+					<th colspan="3">Routing in laravel can be implemented in two ways:</th>
+				</tr>
+				<tr>
+					<th>1</th>
+					<th>Route::get('/$add’, 'Controller@add_function’);</th>
+					<th>This use of routing requires defining that function in the specific controller.</th>
+				</tr>
+				<tr>
+					<th>2</th>
+					<th>public function funkcja_ktora_ma_byc_odpalona()
+						{
+						return ‘static_string’;
+						} 
+					</th>
+					<th></th>
+				</tr>
+
+				</tbody>
+			  </table>
+</body>
+</html>
+

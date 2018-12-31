@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konrad Zając - Fibonacci's sequence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link href="../../css/style.css" rel="stylesheet">
+</head>
+<div class="container-fluid jumbotron text-center" style="padding: 0;margin:0">
+    <h1 style="margin-top: 0">Fibonacci's sequence</h1>
+</div>
+<body>
+   <div class="container">
+        <div class="row">
+            
+            <p> The algorithm to display numbers in <a href="https://en.wikipedia.org/wiki/Fibonacci_number#Computation_by_rounding">fibonacci's</a> sequence can be implemented in many ways, I am showcasing two:
+<ul>
+    <li>the full version</li>
+    <li>the short version (using Computation by rounding)</li>
+</ul>
+    
+            In the full version there are six main steps, if the algorithm should inform about the elapsed time there are three optional steps</p>
+            
+        </div>
+</div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-3">
+            <div class="center-block " >
+                <table style="margin: 10px 0 0 0;">
+                                            <tr>
+                           
+                            <td colspan="3" class="text-center" >
+                              Full version 
+                            </td>
+                            
+                        </tr>
+                                            <tr class="text-center" >
+                            <td class="table_step text-center">
+                                Step
+                            </td>
+                           
+                            <td>
+                                Comment
+                            </td>
+                             <td >
+                                Code
+                            </td>
+                            
+                        </tr>
+                        
+                    </thead>
+                              <tr>
+                            <td class="table_step">
+                                1
+                            </td>
+                            
+                            <td>
+                            The first step is to declare the four needed variables.
+                            </td>
+                            <td class="kod">
+                                <code>  iterator=0,</br>previous_value = 0,</br> current_value = 1,</br>inserted_number;</code>
+                            </td>
+                        </tr>
+                           <tr>
+                            <td style="border-right: 0 " class="table_step">
+                            
+                            </td>
+                            <td style="border-right: 0 ; border-left: 0" >
+                            
+                            </td>
+                            <td style="border-right: 0 " class="kod">
+                                </br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table_step">
+                                2
+                            </td>
+                            <td>
+                            The next step is to know how many fibonacci's numbers to display
+                            </td>
+                            <td class="kod">
+                                <code> x = number('Enter the count of fibonacci's numbers to display');</code>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="table_step">
+                               op[A]
+                            </td>
+                            <td>
+                                Optionally we can start a timer, this line measures the time at the start.
+                            </td>
+                            <td class="kod">
+                                <code> begin = clock();</code>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="table_step">
+                                3
+                            </td>
+                            <td>
+                                Then begin the for loop
+                            </td>
+                            <td class="kod">
+                                <code>     for( iterator=0;iterator&lt;inserted_number;iterator++){</code>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="table_step" style="border-right: 0 ; ">
+                            
+                            </td>
+                            <td style="border-right: 0 ; border-left: 0">
+                            
+                            </td>
+                            <td  class="kod">
+                                <code>{</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table_step">
+                                4
+                            </td>
+                            <td>
+                                Print out the current number in the sequence e.g. 1, 1, 2, 3, 6...
+                            </td>
+                            <td class="w_petli kod">
+                                <code>&nbsp;&nbsp;out < current_value</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table_step">
+                                5
+                            </td>
+                            <td>
+                                Add the previous value to the current (for the next iteration)
+                            </td>
+                            <td class="w_petli kod">
+                                <code>&nbsp;&nbsp;current_value += previous_value;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table_step">
+                                6
+                            </td>
+                            <td>
+                                The variable with the previous value equals the subtraction result.
+                            </td>
+                            <td class="w_petli kod">
+                                <code> &nbsp;&nbsp;previous_value = current_value-previous_value;</code>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td style="border-right: 0 " class="table_step">
+                            
+                            </td>
+                            <td style="border-right: 0 ; border-left: 0" >
+                            
+                            </td>
+                            <td style="border-right: 0 " class="kod">
+                                <code>}</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table_step">
+                               op[B]
+                            </td>
+                            <td>
+                                This line calculates the time at the end of the operation.
+                            </td>
+                            <td class="kod">
+                                <code> end = clock();</code>
+                            </td>
+                        </tr>
+                            <tr>
+                            <td class="table_step">
+                               op[C]
+                            </td>
+                            <td>
+                                This line calculates the time at the end of the operation.
+                            </td>
+                            <td class="kod">
+                                <code> out < operation done in (end - start) seconds</code>
+                            </td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+	</div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-3">
+            <div class="center-block " >
+                <table style="margin: 10% 0 0 0;">
+                                            <tr>
+                           
+                            <td colspan="3" class="text-center" >
+                             Short version 
+                            </td>
+                            
+                        </tr>
+                                            <tr class="text-center" >
+                           
+                            <td colspan='2'>
+                                Comment
+                            </td>
+                             <td >
+                                Code
+                            </td>
+                            
+                        </tr>
+                        
+                    </thead>
+                    <tr>
+                            <td colspan='2' class="table_step" style="border-right: 0 ; ">
+                            
+                            </td>
+                            <td  class="kod">
+                                <code>function Fib($n)                                </code>
+                            </td>
+                        </tr> 
+                    <tr>
+                            <td colspan='2' class="table_step" style="border-right: 0 ; ">
+                            
+                            </td>
+                            <td  class="kod">
+                                <code>{</code>
+                            </td>
+                        </tr> 
+                                  <tr>
+                            <td colspan="2" >
+                                This liner returns the requested fibonacci number </br>
+                                using the <a href="https://en.wikipedia.org/wiki/Fibonacci_number#Computation_by_rounding">computation by rounding</a> technique.
+                            </td>
+                            <td class="kod">
+                                <code>  return round(pow((sqrt(5)+1)/2, $n) / sqrt(5));</code>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td class="table_step" style="border-right: 0 ; ">
+                                
+                                </td>
+                                <td style="border-right: 0 ; border-left: 0">
+                                
+                                </td>
+                                <td  class="kod">
+                                    <code>}</code>
+                                </td>
+                            </tr>
+                </table>
+            </div>
+        </div>
+	</div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="btn-group"         style="margin-top: 5%">
+                    <a href="cpp_fibonacci.zip" class="btn btn-default">C++</a>
+                    <a href="php_fibonacci.zip" class="btn btn-default">PHP</a>
+                    </div>
+                </div>
+                </div>
+</body>
+</html>

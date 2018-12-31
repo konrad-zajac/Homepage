@@ -1,0 +1,18 @@
+#carousel {
+    margin: 0px 0px;
+}
+.carousel-control {
+    padding-top:10%;
+    width:5%;
+    padding-bottom: 0px;
+    background-color:transparent; 
+  }
+section#carousel
+{
+
+    padding-bottom: 0px;
+}
+.left.carousel-control 
+{
+    background-color:transparent; 
+}

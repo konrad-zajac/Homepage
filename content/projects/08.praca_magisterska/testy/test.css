@@ -1,0 +1,75 @@
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+table, th, td
+{
+	text-align:center
+}
+
+.dwa
+{
+	text-align: center;
+}
+.trzy
+{
+	text-align: center;
+}
+
+@font-face
+{
+	font-family: Ralaway;
+src: url(https://fonts.googleapis.com/css?family=Raleway);
+}
+@font-face
+{
+	font-family: Bavro;
+src: url(../src/2.fonty/Bavropro.ttf);
+}
+@font-face
+{
+	font-family: Petuina;
+src: url(../src/2.fonty/BloomingPetunia.ttf);
+}
+@font-face
+{
+	font-family: Butler;
+src: url(../src/2.fonty/AHAMONO-Regular.otf);
+}
+h1
+{
+
+	font-family: 'AHAMONO', sans-serif;
+}
+h2
+{
+	font-family: 'Raleway', sans-serif;
+
+}
+h3
+{
+	font-family: 'Raleway', sans-serif;
+
+}
+h4
+{
+	font-family: 'Raleway', sans-serif;
+
+}
+.formlnl
+{
+display: inline;
+float: left;
+	   text-align: left;
+width: 6em;
+	   margin-right: 1em;
+	   margin-top: 1em;
+}
+
+.forml
+{
+display: inline;
+float: left;
+	   text-align: right;
+width: 6em;
+	   margin-right: 1em;
+	   margin-top: 1em;
+}

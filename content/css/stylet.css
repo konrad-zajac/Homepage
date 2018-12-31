@@ -1,0 +1,50 @@
+.niebieski {
+  background: #3cb1fd; }
+
+.purple {
+  background: #ab3fdd; }
+
+.wine {
+  background: #ae163e; }
+
+.borr {
+  border: 1px solid black; }
+
+table {
+  border: 1px solid black;
+  margin: 10% 0 0 0;
+  font-size: 1vw; }
+
+table td {
+  border: 1px solid black; }
+
+thead {
+  text-align: center; }
+
+.table_step {
+  width: 5%;
+  text-align: center; }
+
+code {
+  color: green;
+  background-color: black; }
+
+p {
+  margin: 5% 0 0 0;
+  width: 102%;
+  font-size: 1vw; }
+
+.w_petli {
+  text-align: left;
+  padding: 0 0 0 5%; }
+
+.kod {
+  background-color: black; }
+
+.prime_kod {
+  width: 55%; }
+
+.header_napis {
+  margin-top: 10%; }
+
+/*# sourceMappingURL=stylet.css.map */

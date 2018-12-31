@@ -1,0 +1,61 @@
+html,body { height:100%; }
+
+.console
+ {
+background: #000000;
+height: 90%;
+width: 90%;
+border: 3px solid #c0c0c0;
+padding: 10px;
+border-top-width: 20px;
+position: relative;
+border-radius: 3px;
+}
+
+.console::before {
+content: '';
+width: 10px;
+height: 10px;
+position: absolute;
+background: #ff0000;
+border-radius: 50%;
+top: -15px;
+left: 3px;
+}
+
+.console::after {
+content: '';
+width: 10px;
+height: 10px;
+position: absolute;
+background: #ffa500;
+border-radius: 50%;
+top: -15px;
+left: 15px;
+}
+
+.typing {
+color: #34d834;
+margin: 0;
+}
+
+.typing::before {
+content: 'user@kz: ~';
+display: block;
+}
+
+.typing::after {
+content: '_';
+animation-name: blink;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}

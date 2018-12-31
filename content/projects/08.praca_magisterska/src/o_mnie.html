@@ -1,0 +1,87 @@
+	<!DOCTYPE html>
+		<html>
+		<head>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.17/angular2-all-testing.umd.dev.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function ()
+			{
+				var images= ['k.jpg'];
+				var html = '';
+				$.each(images,function(key, value)
+				{
+					html+= '<img src="'+value+'" />';
+				});
+				$('#imageContainer').html(html);
+
+				$('img').error(function()
+				{
+					$(this).replaceWith('<img src="3.img/404.jpg" alt="Could not load image" class="img-thumbnail wymiary">');
+				});
+			});
+		</script>
+
+		<style>
+           .wymiary
+           {
+           width: 111%;
+           height: 111%;
+           }
+        </style>
+		</head>
+		<body>
+
+		<style>
+    		@font-face
+            {
+                font-family: Butler;
+                src: url(2.fonty/AHAMONO-Regular.otf);
+            }
+            .napisy_nawigacyjne
+            {
+            font-family: Butler;
+            color: white;
+                  margin-top: 15%;
+            }
+            .moje_projekty
+            {
+            margin-top: 10%;
+            background-color: #00a2e8;
+            }
+        </style>
+
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html"> Strona Główna</a>
+    </div>
+    <div class="collapse navbar-collapse" id="nav-toggle">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="o_mnie.html">O mnie</a></li>
+            <li ><a href="1.dokumenty/dokumenty.html">Dokumenty</a></li>
+            <li><a href="/add"></a></li>
+        </ul>
+</nav>
+
+<body>
+
+	<div  class="row">
+
+		<div class="container col-xs-3 col-md-3">
+			<img src="3.img/k.jpg" class="img-thumbnail wymiary" alt="Konrad Zając">
+		</div>
+
+		<div class="container col-xs-9 col-md-9">
+			<h3>
+			Nazywam się Konrad Zając, urodziłem się i mieszkam w Sczecinie.
+			Jestem studentem informatyki i ta strona ma za zadanie przekazać informacje kontaktowe, i przedstawić moje projekty.
+			</h3>
+		</div>
+
+	</div>
+		
+</body>

@@ -1,0 +1,211 @@
+t
+	<!DOCTYPE html>
+	<html>
+<head>
+	<meta charset="utf8">
+	<link type="text/css" href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class=" pagination-center text-center col-md-12">
+
+
+
+	<title>Porównania w JavaScripcie</title>
+
+<div class="container">
+	<table  class="table-bordered">
+	<thead>
+		<tr>
+			<th >L.p.</th>
+			<th>Przycisk</th>
+			<th>Komentarz</th>
+		</tr>
+	</thead>
+		<tr>
+
+				<th>
+					1
+				</th>
+				<td>
+					<button class="btn btn-default btn-lg" onclick="alerty()" type="button">.alert()</button>
+				</td>
+
+				<td>
+				 <b>.alert()</b>wysyła alert.
+				</td>
+		</tr>
+		<!--
+		-->
+		<!-- -->
+		<tr>
+
+				<th>
+					2
+				</th>
+				<td>
+					<button class="btn btn-default btn-lg" type="button" onclick="doc_wr_lok()" id="demo">.write_lok()</button>
+					
+				</td>
+
+				<td>
+			 <b>.write</b> wpisuje w danym elemencie.
+				</td>
+		<!-- -->
+		<tr>
+
+				<th>
+					3
+				</th>
+				<td>
+					<button class="btn btn-default btn-lg" type="button" onclick="doc_wr_glob()">.write_glob()</button>
+				</td>
+
+				<td>
+			 <b>.write</b> wpisuje w danym elemencie.
+				</td>
+		</tr>
+		<!-- -->
+		<tr>
+
+				<th>
+					4
+				</th>
+				
+				<td>
+				<button class="btn btn-default btn-lg" type="button" onclick="con_log()">console.log</button>
+				</td>
+
+				<td>
+			<b>console.log</b>wpisuje do konsoli </br> <small><i> (inaczej włącza się konsolę w różnych przeglądarkach)</i></small>
+				</td>
+		</tr>
+		<!-- -->
+		<tr>
+
+
+				<th>
+					5
+				</th>
+
+				<td>
+					<button class="btn btn-default btn-lg" onclick="czas()" type="button">.date()</button>
+				</td>
+
+				<td>
+				 alert z aktualnym czasem po Polsku
+				</td>
+		</tr>
+	</table>
+</div>
+
+
+</div>
+<p id="tmp" ></p>
+<script>
+/////////////////////////////////////////////////////////////////////////////////////
+function alerty()
+{
+	var s1 = prompt("Podaj co ma być w alercie");
+alert(s1);
+}
+function czas()
+{
+ 	var czas = Date();
+ 	var p_czas = czas.split("\ ");
+ 	//dzien
+ 	switch (new Date().getDay())
+	{
+ 	case 1:
+ 	p_czas[0] = "Poniedziałek";
+ 	break;
+ 	case 2:
+ 	p_czas[0] = "Wtorek";
+ 	break;
+ 	case 3:
+ 	p_czas[0] = "Środa";
+ 	break;
+ 	case 4:
+ 	p_czas[0] = "Czwartek";
+ 	break;
+ 	case 5:
+ 	p_czas[0] = "Piątek";
+ 	break;
+ 	case 6:
+ 	p_czas[0] = "Sobota";
+ 	break;
+ 	case 7:
+ 	p_czas[0] = "Niedziela";
+ 	break;
+	 }
+
+ 	//miesiac
+ 	switch (new Date().getMonth())
+	{
+ 	case 1:
+ 	p_czas[1] = "Styczen";
+ 	break;
+ 	case 2:
+ 	p_czas[1] = "Luty";
+ 	break;
+ 	case 3:
+ 	p_czas[1] = "Marzec";
+ 	break;
+ 	case 4:
+ 	p_czas[1] = "Kwiecień";
+ 	break;
+ 	case 5:
+ 	p_czas[1] = "Maj";
+ 	break;
+ 	case 6:
+ 	p_czas[1] = "Czerwiec";
+ 	break;
+ 	case 7:
+ 	p_czas[1] = "Lipiec";
+ 	break;
+ 	case 8:
+ 	p_czas[1] = "Sierpień";
+ 	break;
+ 	case 9:
+ 	p_czas[1] = "Wrzesień";
+ 	break;
+ 	case 10:
+ 	p_czas[1] = "Listopad";
+ 	break;
+ 	case 11:
+ 	p_czas[1] = "Październik";
+ 	break;
+ 	case 12:
+ 	p_czas[1] = "Grudzień";
+ 	break;
+	 }
+
+alert(p_czas[2] +" "+p_czas[0] + " " + p_czas[1] + " " + p_czas[3] + " " + p_czas[4]);
+}
+function doc_wr_lok()
+{
+	var s1 = prompt("Podaj co ma być w document.write (nadpisze to tylko jeden element)");
+document.getElementById("demo").innerHTML = s1;
+
+}
+function doc_wr_glob()
+{
+	var s1 = prompt("Podaj co ma być w document.write (NADPISZE TO INNE ELEMENTY HTML NA STRONIE)");
+document.write(s1);
+}
+function inner()
+{
+	var number = prompt("Podaj na co zamienić W");
+ document.getElementById("demo").innerHTML = number;
+}
+function con_log()
+{
+	var s1 = prompt("Podaj co ma być w wpisac do konsoli");
+console.log(s1)
+}
+</script>
+
+</body>
+</html>
+

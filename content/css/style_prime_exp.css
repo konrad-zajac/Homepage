@@ -1,0 +1,21 @@
+.prime_img {
+  height: 60%;
+  width: 114%;
+  margin: 10% 0 0 10%; }
+
+.prime_legend_opis {
+  float: left;
+  display: inline-block;
+  text-align: left;
+  padding: 0; }
+
+.prime_legend_kwadrat {
+  display: inline-block;
+  height: 20px;
+  width: 1px; }
+
+.prime_legend_main {
+  margin: 0 0 0 10%;
+  width: 114%; }
+
+/*# sourceMappingURL=style_prime_exp.css.map */

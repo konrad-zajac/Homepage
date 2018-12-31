@@ -1,0 +1,32 @@
+{
+  "name": "freelancer",
+  "title": "Freelancer",
+  "version": "3.3.7+1",
+  "homepage": "http://startbootstrap.com/template-overviews/freelancer",
+  "author": "Start Bootstrap",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+  },
+  "devDependencies": {
+    "bootstrap": "4.1.0",
+    "browser-sync": "^2.24.7",
+    "font-awesome": "^4.6.3",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-header": "^1.8.7",
+    "gulp-less": "^4.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^3.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+  },
+  "dependencies": {
+    "jquery-colorbox": "^1.6.4",
+    "popper.js": "^1.14.4"
+  }
+}

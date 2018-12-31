@@ -1,0 +1,247 @@
+		<!DOCTYPE html>
+	<html>
+<head>
+	<meta charset="utf8">
+	<link type="text/css" href="../style.css" rel="stylesheet">
+</head>
+<style>
+	.rozmiary_zdjecia
+	{
+		width:200px;
+		height: 200px;
+	}
+</style>
+<body>
+
+<div class="container">
+	<table  class="table-bordered">
+	<thead>
+		<tr>
+			<th>Obszar do kliknięcia</th>
+			<th>Grafika</th>
+			<th>Komentarz</th>
+
+		</tr>
+	</thead>
+	<!-- -->
+		<tr>
+				<td onmousedown="tab()">
+					.split
+				</td>
+
+				<td>
+					<div class="img-responsive">
+						<img class="rozmiary_zdjecia" src="../src/3.img/js/split1.jpg">
+					</div>
+				</td>
+
+				<td>
+					Funkcja <b>.split</b> zwraca całą tablice.
+				</td>
+
+
+		</tr>
+	<!-- -->
+		<tr>
+				<td onmousedown="split()">>
+					.split[*]
+				</td>
+	<td>
+					<div class="img-responsive">
+						<img class="rozmiary_zdjecia" src="../src/3.img/js/split2.jpg">
+					</div>
+				</td>
+				<td>
+						Funkcja <b>.split[*]</b> zwraca wskazany argument z tablicy.
+				</td>
+
+
+		</tr>
+	<!-- -->
+		<tr>
+				<td onmousedown="splice()">
+					.splice
+				</td>
+
+
+				<td>
+					<div class="img-responsive">
+						<img class="rozmiary_zdjecia" src="../src/3.img/js/splice.jpg">
+					</div>
+				</td>
+
+				<td>
+					Funkcja <b>.splice</b> jako pierwszy argument przyjmuje numer indexu od ktorego ma zaczac modyfikowanie.</br>
+					 a jako drugi ile znakow usunąć.
+				</td>
+
+
+		</tr>
+	<!-- -->
+		<tr>
+				<td  onmousedown="concat()">
+					.concat
+				</td>
+
+						<td>
+					<div class="img-responsive">
+						<img class="rozmiary_zdjecia" src="../src/3.img/js/concatenate.jpg ">
+					</div>
+				</td>
+
+
+				<td>
+						Funkcja <b>.concat</b> konkantenuje tablice.
+				</td>
+		</tr>
+	<!-- -->
+		<tr>
+				<td onmousedown="t_len()">
+					.length
+				</td>
+
+						<td>
+					<div class="img-responsive">
+						<img class="rozmiary_zdjecia" src="../src/3.img/js/length.jpg ">
+					</div>
+				</td>
+
+				<td>
+					Funkcja <b>.length</b> zwraca dlugosc wsystkich typow danych licząc od 1).
+				</td>
+		</tr>
+	<!-- -->
+		<tr>
+				<td onmousedown="join()">
+					.join
+				</td>
+
+					<td>
+					<div class="img-responsive">
+						<img class="rozmiary_zdjecia" src="../src/3.img/js/join_r.jpg ">
+					</div>
+				</td>
+
+				<td>
+						Funkcja <b>.join</b> pobiera argumentułączy tabele i zwraca je połączone separatorem.
+				</td>
+		</tr>
+	<!-- -->
+		<tr>
+			<td onmousedown="push()">
+				.push
+			</td>
+
+
+					<td>
+					<div class="img-responsive">
+						<img class="rozmiary_zdjecia" src="../src/3.img/js/push.jpg ">
+					</div>
+				</td>
+
+
+			<td>
+				Funkcja <b>.push</b> dodaje element do tablicy.
+			</td>
+		</tr>
+	<!-- -->
+		<tr>
+			<td onmousedown="pop()">
+				.pop
+			</td>
+
+
+					<td>
+					<div class="img-responsive">
+						<img class="rozmiary_zdjecia" src="../src/3.img/js/pop.jpg ">
+					</div>
+				</td>
+
+
+			<td>
+				Funkcja <b>.pop</b> usuwa element z tablicy.
+			</td>
+		</tr>
+	</table>
+	</div>
+</body>
+	</div>
+<script>
+/////////////////////////////////////////////////////////////////////////////////////
+function tab()
+{
+	var numer = prompt(" Podaj element tablicy(po przecinku");
+	var arr = numer.split(",");
+    alert(arr);
+}
+
+function split()
+{
+	var numer = prompt(" Podaj element tablicy(po przecinku)");
+	var ktory = prompt(" Podaj ktory element tablicy ma byc wyciety");
+	var arr = numer.split(",");
+   alert( arr[ktory]);
+}
+
+function t_len()
+{
+	var numer = prompt(" Podaj element tablicy(po przecinku)");
+	var arr = numer.split(",");
+	alert( arr.length);
+}
+
+function splice()
+{
+	var numer = prompt(" Podaj element tablicy(po przecinku)");
+	var arr = numer.split(",");
+	var dl = (arr.length - 1);
+	var argument_1 = prompt("Podaj index od ktorego modyfikowac tablice, od 0 do "+dl);
+	var argument_2 = prompt("Podaj drugi argument");
+	arr.splice(argument_1,argument_2);
+	alert(arr);
+}
+
+function concat()
+{
+	
+	var numer = prompt(" Podaj element tablicy 1 (po przecinku}");
+	var arr = numer.split(",");
+	var numer1 = prompt(" Podaj element tablicy 2 (po przecinku}");
+	var arr1 = numer1.split(",");
+	var numer2 = prompt(" Podaj element tablicy 3 (po przecinku}");
+	var arr2 = numer2.split(",");
+	var numer3 = prompt(" Podaj element tablicy 4 (po przecinku}");
+	var arr3 = numer3.split(",");
+    alert( arr.concat(arr1,arr2,arr3));
+}
+
+function join()
+{
+	var numer = prompt(" Podaj element tablicy(po przecinku)");
+	var arr = numer.split(",");
+	var sep = prompt(" Podaj separator (najlepiej inny niz przecinek)");
+    alert(arr.join(sep));
+}
+
+function push()
+{
+
+	var x = prompt(" Podaj element tablicy(po przecinku)");
+	var arr = x.split(",");
+	var cos = prompt(" Podaj element do dodania");
+	arr.push(cos);
+    alert(arr);
+}
+
+function pop()
+{
+	var x = prompt(" Podaj element tablicy(po przecinku)");
+	var arr = x.split(",");
+	arr.pop();
+    alert(arr);
+}
+</script>
+
+</body>
+</html>
+

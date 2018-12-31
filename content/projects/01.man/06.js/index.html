@@ -1,0 +1,186 @@
+	<!DOCTYPE html>
+	<html>
+<head>
+<meta charset="utf-8">
+
+	<link type="text/css" href="../style.css" rel="stylesheet">
+	<link type="text/css" href="../src/4.style/style_tabeli.css" rel="stylesheet">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+</head>
+
+<body ng-app="" >
+
+<header >
+
+</header>
+<div class="container">
+	<div class="jumbotron">
+
+		<h1 style="margin-left: 30%" ><img height="100" width="100" src="../manuale_img/js/js.png"><span style="bottom: 200px">manual</span></h1>
+
+		<div style="margin-left: 10%" class="show-inline-block  btn-group">
+
+			<button ng-click="js_tab = 1" ng-class="{ active: js_tab === 1 }" class="btn btn-primary" >funkcje outputujące</button>
+
+			<button ng-click="js_tab = 2" ng-class="{ active: js_tab === 2 }" class="btn btn-primary" >funkcje math</button>
+			<!-- <button ng-click="js_tab = 3" ng-class="{ active: js_tab === 3 }" class="btn btn-primary" >tablice</button> -->
+			<button ng-click="js_tab = 4" ng-class="{ active: js_tab === 4 }" class="btn btn-primary" >operacje na stringach</button>
+			<button ng-click="js_tab = 6" ng-class="{ active: js_tab === 6 }" class="btn btn-primary" >listenery</button>
+			<Button ng-click="js_tab = 7" ng-class="{ active: js_tab === 7 }" class="btn btn-primary" >porownania</button>
+			<Button ng-click="js_tab = 8" ng-class="{ active: js_tab === 8 }" class="btn btn-primary" >elementy html</button>
+			<Button ng-click="js_tab = 9" ng-class="{ active: js_tab === 9 }" class="btn btn-primary" >Design patterns</button>
+
+		</div>
+	</div>
+</div>
+
+<div style="font-size: 200% "  class=" row-fluid" data-ng-init="js_tab=0">
+    <div class=" pagination-center text-center col-md-12">
+
+
+    <div class="panel" ng-show="js_tab === 1">
+        <ng-include
+        src="'funkcje/outputujace.html'">
+        </ng-include>
+    </div>
+
+    <div class="panel" ng-show="js_tab === 2">
+      <ng-include
+        src="'funkcje/math.html'">
+        </ng-include>
+    </div>
+
+
+ <div class="panel" ng-show="js_tab === 3">
+      <ng-include
+        src="'funkcje/tablice.html'">
+        </ng-include>
+    </div>
+
+ <div class="panel" ng-show="js_tab === 4">
+      <ng-include
+        src="'funkcje/operacje_na_stringach.html'">
+        </ng-include>
+    </div>
+
+
+ <div class="panel" ng-show="js_tab === 5">
+      <ng-include
+        src="'funkcje/listenery.html'">
+        </ng-include>
+    </div>
+
+ <div class="panel" ng-show="js_tab === 6">
+      <ng-include
+        src="'funkcje/listenery.html'">
+        </ng-include>
+    </div>
+
+    <div class="panel" ng-show="js_tab === 7">
+        <ng-include
+        src="'funkcje/porownania.html'">
+        </ng-include>
+    </div>
+
+    <div class="panel" ng-show="js_tab === 8">
+        <ng-include
+        src="'funkcje/elementy_html.html'">
+        </ng-include>
+    </div>
+
+    <div class="panel" ng-show="js_tab === 9">
+        <ng-include
+        src="'funkcje/design_patterns.html'">
+        </ng-include>
+    </div>
+    </div>
+</div>
+
+<p id="demo"></p>
+<script>
+/////////////////////////////////////////////////////////////////////////////////////
+
+function t_len()
+{
+	var str = document.getElementById("demo").innerHTML;
+    document.getElementById("demo").innerHTML = str.length;
+}
+function split()
+{
+	var numer = prompt(" Podaj element tablicy(po przecinku)");
+	var ktory = prompt(" Podaj ktory element tablicy ma byc wyciety");
+	var arr = numer.split(",");
+    document.getElementById("demo").innerHTML = arr[ktory];
+}
+function splice()
+{
+	var numer = prompt(" Podaj element tablicy(po przecinku)");
+	var arr = numer.split(",");
+	var dl = (arr.length - 1);
+	var argument_1 = prompt("Podaj index od ktorego modyfikowac tablice, od 0 do "+dl);
+	var argument_2 = prompt("Podaj drugi argument");
+	arr.splice(argument_1,argument_2);
+    document.getElementById("demo").innerHTML = arr;
+}
+function por()
+{
+	alert("porównanie inta ze stringiem jest mozliwe ponieważ js zamienia \"5\" na wartośćś inta 5, 5 == \"5\" wynikiem == jest " + (5 == "5") 
+			+ "\n natomiast trojkrotny znak === sprawdza zgodność wartosci oraz typu, dlatego ===" + (5 === "5"));
+}
+function tab()
+{
+	var numer = prompt(" Podaj element tablicy(po przecinku");
+	var arr = numer.split(",");
+    document.getElementById("demo").innerHTML = arr;
+}
+function concat()
+{
+	var numer = prompt(" Podaj element tablicy 1 (po przecinku}");
+	var arr = numer.split(",");
+	var numer1 = prompt(" Podaj element tablicy 2 (po przecinku}");
+	var arr1 = numer1.split(",");
+	var numer2 = prompt(" Podaj element tablicy 3 (po przecinku}");
+	var arr2 = numer2.split(",");
+	var numer3 = prompt(" Podaj element tablicy 4 (po przecinku}");
+	var arr3 = numer3.split(",");
+    document.getElementById("demo").innerHTML = arr.concat(arr1,arr2,arr3);
+}
+function join()
+{
+	var numer = prompt(" Podaj element tablicy(po przecinku)");
+	var arr = numer.split(",");
+	var sep = prompt(" Podaj separator");
+	var arr = numer.split(",");
+    document.getElementById("demo").innerHTML = arr.join(sep);
+}
+function push()
+{
+	var x = document.getElementById("demo").innerHTML;
+	var arr = x.split("\ ");
+	var cos = prompt(" Podaj element do dodania");
+	arr.push(cos);
+    document.getElementById("demo").innerHTML = arr;
+}
+function pop()
+{
+	var x = document.getElementById("demo").innerHTML;
+	var arr = x.split("\ ");
+	arr.pop();
+    document.getElementById("demo").innerHTML = arr;
+}
+</script>
+
+</body>
+</html>
+

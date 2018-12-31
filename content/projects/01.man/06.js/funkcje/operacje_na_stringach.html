@@ -1,0 +1,127 @@
+
+
+	<!DOCTYPE html>
+	<html>
+<head>
+	<meta charset="utf8">
+	<link type="text/css" href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+			<table  class="table-bordered">	<thead>
+				<tr>
+					<th>L.p.</th>
+					<th>Przycisk</th>
+					<th>Komentarz</th>
+				</tr>
+			</thead>
+		<tr>
+
+		</tr>
+		<!-- -->
+		<tr>
+			<td>
+				1
+			</td>
+
+			<td>
+				<button class="btn btn-default btn-lg" onclick="pos()">
+				wyszukanie pozycji
+				</button>
+			</td>
+
+			<td>
+			funkcja indexof zwraca index danego slowa(zaczynając od 0)
+			</td>
+		</tr>
+		<!-- -->
+		<tr>
+		<td>
+				2
+			</td>
+
+			<td>
+				<button class="btn btn-default btn-lg" onclick="concatenate()">
+				operator konkatenacji +
+				</button>
+			</td>
+			<td>
+			ten operator łączy dwa stringi
+			</td>
+		</tr>
+		<!-- -->
+		<tr>
+		<td>
+				3
+			</td>
+
+			<td>
+				<button class="btn btn-default btn-lg"  onclick="toL()">
+				.toLower
+				</button>
+			</td>
+
+			<td id="tl">
+			Ten operator zmienia znaki na NŻSZE.
+			</td>
+		</tr>
+		<!-- -->
+		<tr>
+		<td>
+				4
+			</td>
+
+			<td>
+				<button class="btn btn-default btn-lg"  onclick="tou()">
+				.toupper
+				</button>
+			</td>
+
+			<td id="tu">
+			Ten operator zmienia znaki na większe.
+			</td>
+		</tr>
+
+		</table>
+	</div>
+</body>
+
+<script>
+/////////////////////////////////////////////////////////////////////////////////////
+function pos()
+{
+	var numer = prompt(" Podaj element tablicy(po przecinku)");
+	var ktory = prompt(" Podaj ktory elementu indec chesz znac tablicy ma byc wyciety");
+	var arr = numer.split(",");
+    var pos = arr.indexOf(ktory);
+	alert(pos);
+}
+function concatenate()
+{
+
+	var s1 = prompt("Podaj jeden string do konkatenacji");
+	var s2 = prompt("Podaj drugi string do konkatenacji");
+	alert(s1 + s2);
+}
+
+function toL()
+{
+	var x1 = document.getElementById("tl").innerHTML;
+    document.getElementById("tl").innerHTML = x1.toLowerCase();
+}
+function tou()
+{
+	var x1 = document.getElementById("tu").innerHTML;
+    document.getElementById("tu").innerHTML = x1.toUpperCase();
+}
+
+//function tou()
+//{
+//
+//}
+</script>
+
+</body>
+</html>
+

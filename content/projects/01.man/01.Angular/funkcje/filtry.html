@@ -1,0 +1,159 @@
+
+<script>
+
+$(document).ready(function ()
+{
+$( "tr:even" ).addClass('tlo');
+});
+</script>
+
+	<body>
+		<div class="container jumbotron">
+				Filtry w angularze służą do
+				 modyfikacji danych wyjściowych wyprodukowanych przez część angulara.
+			Widoczny jest pewien schemat &#123; &#123; dane | filtr:opcje &#125; &#125;
+			<table  id="ta_tabela_do_pokolorowania" class="table-bordered">
+				<thead>
+					<tr>
+						<th>L.p.</th>
+						<th>Filtr</th>
+						<th>Komentarz</th>
+					</tr>
+				</thead>
+				<tr >
+
+					<td>
+					1
+					</td>
+
+					<td>
+
+										uppercase
+
+					</td>
+
+					<td>
+					Otrzymane litery konertuje dane na wielkie.
+					</td>
+
+				</tr>
+				<!-- -->
+
+				<tr>
+
+					<td>
+					2
+					</td>
+
+					<td>
+	 lowercase
+					</td>
+
+					<td>
+					Otrzymane litery konertuje dane na małe.
+					</td>
+
+				</tr>
+				<!-- -->
+				<tr >
+
+					<td>
+					3
+					</td>
+
+					<td>
+						 currency
+					</td>
+
+					<td>
+					Filtr dodaje do waluty jej symbol , opcjonalnie możemy dodać dwa argumenty
+					(1. symbol , oraz 2 - ilość miejsc do której wartość ma zostać zaokrąglona).
+					Umiejscowienie znaku jest możliwe za pomocą pliku lokalizacji i18n.
+					</td>
+
+				</tr>
+				<!-- -->
+
+				<tr>
+
+					<td>
+					4
+					</td>
+
+					<td>
+						filter
+											</td>
+
+					<td>
+					</td>
+
+				</tr>
+				<!-- -->
+				<tr >
+
+					<td>
+					5
+					</td>
+
+					<td>
+						 json
+					</td>
+
+					<td>
+					</td>
+
+				</tr>
+				<!-- -->
+
+				<tr>
+
+					<td>
+					6
+					</td>
+
+					<td>
+						 limitTo
+					</td>
+
+					<td>
+					</td>
+
+				</tr>
+				<!-- -->
+				<tr >
+
+					<td>
+					7
+					</td>
+
+					<td>
+						date
+					</td>
+
+					<td>
+					Filtruje dane szukając daty ,opcjonalnie do filtru możemy dodać dwa argumenty(1.format daty oraz 2 - strefe czasową)
+					</td>
+
+				</tr>
+				<!-- -->
+				<tr>
+
+					<td>
+					8
+					</td>
+
+					<td>
+						 orderBy
+					</td>
+
+					<td>
+					</td>
+
+				</tr>
+				<!-- -->
+			</table>
+		</div>
+	</body>
+
+</html>
+

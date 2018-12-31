@@ -1,0 +1,24 @@
+
+$prime_img_height:60%;
+$margin_left_legend:10%;
+.prime_img {
+height: $prime_img_height;
+width: 1.9 * $prime_img_height;
+margin: 10% 0 0 $margin_left_legend;
+}
+.prime_legend_opis {
+float: left;
+display: inline-block;
+text-align: left;
+padding: 0;
+}
+.prime_legend_kwadrat {
+  display: inline-block;
+  height: 20px;
+  width: 1px;
+
+  }
+ .prime_legend_main{
+   margin: 0 0 0 $margin_left_legend;
+   width: 1.9 * $prime_img_height;
+ }

@@ -1,0 +1,15 @@
+{
+  "lang": "en",
+  "background_color": "#ffffff",
+  "theme_color": "#33bb9c",
+  "name": "Web Developer - Freelancer",
+  "short_name": "Web Develope",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "YOU-NEED-TO-HAVE-A-144-x-144-ICON.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <style>
+		h2,h3
+		{
+			font-family: 'Raleway', sans-serif;
+
+		}
+            @font-face
+            {
+                font-family: Bavro;
+                src: url(../../src/2.fonty/Bavropro.ttf);
+            }
+            @font-face
+            {
+                font-family: Petuina;
+                src: url(../../src/2.fonty/BloomingPetunia.ttf);
+            }
+            @font-face
+            {
+                font-family: Butler;
+                src: url(../../src/2.fonty/AHAMONO-Regular.otf);
+            }
+
+
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $wczesnie = $.now();
+
+
+            $("select").click(function(){
+                $pozno = $.now();
+                $teraz = $pozno - $wczesnie ;
+                alert("zakonczono w " + Math.round($teraz/10)/100 + "sekund");
+            })});
+
+    </script>
+</head>
+<body>
+<div style="margin-left: 40%" class="container">
+
+    <h1 style="font-family: AHAMONO;margin-left: 16%; ">Test 2d</h1>
+   
+
+</div>
+<div style="margin-left: 38%" class="container">
+
+
+    <form style="margin-left: 20%" id="myForm" method="post" action="test2d.php">
+      <div>
+          <p>Wybierz swój ulubiony kolor.</p>
+
+          <select>
+              <option>jasno-czerwony</option>
+              <option>czerwony</option>
+              <option>ciemno-czerwony</option>
+              <option>jasno-niebieski</option>
+              <option>niebieski</option>
+              <option>ciemno-niebieski</option>
+              <option>jasno-zielony</option>
+              <option>zielony</option>
+              <option>ciemno-zielony</option>
+              <option>jasno-żółty</option>
+              <option>żółty</option>
+              <option>ciemnno-żółty</option>
+              <option>jasno-fioletowy</option>
+              <option>fioletowy</option>
+              <option>jasno-pomarańczowy</option>
+              <option>pomarańczowy</option>
+              <option>ciemno-pomarańczowy</option>
+              <option>jasno-różowy</option>
+              <option>różowy</option>
+              <option>ciemno-różowy</option>
+              <option>jasno-brązowy</option>
+              <option>brązowy</option>
+              <option>ciemno-brązowy</option>
+              <option>jasno-granatowy</option>
+              <option>granatowy</option>
+              <option>jasno-seledynowy</option>
+              <option>seledynowy</option>
+              <option>ciemno-seledynowy</option>
+              <option>biały</option>
+              <option>czarny</option>
+
+          </select>
+      </div>
+    </form>
+</div>
+<a style="margin-left: 52%;
+            margin-top: 40px"
+   href='../3/test3a.html'
+   class="btn btn-lg btn-success mar">
+    <b>test 3a </b>
+    <i class="glyphicon glyphicon-arrow-right">
+    </i>
+
+</a>
+</body>
+
+</html>

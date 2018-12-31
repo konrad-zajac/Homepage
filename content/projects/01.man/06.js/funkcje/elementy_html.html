@@ -1,0 +1,119 @@
+
+	<!DOCTYPE html>
+	<html>
+
+<head>
+	<meta charset="utf8">
+	<link type="text/css" href="../style.css" rel="stylesheet">
+</head>
+<style>
+.HID
+{
+display: none;
+}
+.SH
+{
+display: block;
+}
+</style>
+
+	<body>
+		<div class="container">
+
+				<table  class="table-bordered">
+				<thead>
+					<tr>
+						<th>L.p.</th>
+						<th>Przycisk</th>
+						<th>Komentarz</th>
+					</tr>
+				</thead>
+			<tr>
+
+			<td>
+				1
+			</td>
+				<td>
+					<button onclick="header()">
+					headery
+					</button>
+				</td>
+
+				<td>
+				JS dodaje elementy HTML.
+				</td>
+			</tr>
+			<!-- -->
+			<tr>
+
+			<td>
+				2
+			</td>
+
+				<td  id="css1">
+					<button onclick="cssy()">
+					zmiany css
+					</button>
+				</td>
+
+				<td >
+				JS zmienia tło elementu HTML na losowy kolor.
+				</td>
+			<!-- -->
+			<tr>
+
+			<td>
+				3
+			</td>
+			
+				<td >
+					<button onclick="hi_sh()">
+					hide/show
+					</button>
+
+				</td>
+
+				<td >
+
+				<p  id="css2">JS <b>pokazuje</b> i <b>chowa</b> element HTML. </br>(jest to zrealizowane za pomocą samego JS)</p>
+				</td>
+			</table>
+		</div>
+	<p id="ddd"></p>
+	</body>
+<script>
+/////////////////////////////////////////////////////////////////////////////////////
+function header()
+{
+    var x ="", i;
+    for (i=1; i<=6; i++) {
+        x = x + "<h" + i + ">Header poziomu " + i + "</h" + i + ">";
+    }
+    document.getElementById("ddd").innerHTML = x;
+}
+function cssy ()
+{
+	var kolor = "#" + Math.ceil(Math.random() * 1000000);
+	document.getElementById('css1').style.backgroundColor = kolor;
+}
+function hi_sh()
+{
+var element = document.getElementById('css2'),
+    style = window.getComputedStyle(element),
+    dd = style.getPropertyValue('display');
+
+	if(dd == "block")
+	{
+	element.classList.add("HID");
+	}
+	else
+	{
+	element.classList.add("SH");
+	}
+
+}
+</script>
+
+</body>
+</html>
+

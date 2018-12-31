@@ -1,0 +1,65 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script type="text/javascript" src="jumbotron.js"></script>
+		<link rel="stylesheet" type="text/css" href="../test.css">
+	</head>
+
+<body ng-app="">
+<div class="container center jumbotron">
+		<h2 style="margin-left:40%"> Wybór testów</h2>
+
+<div style="margin-left:22%">
+    
+    
+        
+        <div class="container " style="display:inline; float:left">
+            <div class="container">
+
+  <div class="btn-group">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      test1 </button>
+      <ul class="dropdown-menu" role="menu">
+          
+              <li>
+              <a ng-click="tab = 1"
+                ng-class="{ active: tab === 1 }" href="">test1a</a>
+                </li>
+              <li>
+              <a ng-click="tab = 2"
+                ng-class="{ active: tab === 2 }" href="">test1b</a>
+                </li>
+              <li>
+              <a ng-click="tab = 3"
+                ng-class="{ active: tab === 3 }" href="">test1c</a>
+                </li>
+              <li>
+              <a ng-click="tab = 4"
+                ng-class="{ active: tab === 4 }" href="">test1d</a>
+                </li>
+
+
+
+      </ul>
+    </div>
+      
+  </div>
+</div>
+      
+    </div>
+    </div>
+</div>
+        <div class="panel" ng-show="js_tab === 1">
+            <ng-include
+                    src="'../1/test1a.html'">
+            </ng-include>
+        </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "secl-group/phpcs-secl-standard": "~1.0.0"
+    }
+}

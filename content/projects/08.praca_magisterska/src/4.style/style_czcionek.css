@@ -1,0 +1,36 @@
+
+@font-face
+{
+	font-family: Butler;
+	src: url(../2.fonty/AHAMONO-Regular.otf);
+}
+.czcionka-butler
+{
+font-family: Butler;
+}
+
+@font-face
+{
+	font-family: Petunia;
+	src: url(../2.fonty/BloomingPetunia.ttf);
+}
+.czcionka-petunia
+{
+font-family: Petunia;
+}
+@font-face
+{
+	font-family: Japokki;
+	src: url(../2.fonty/Jaapokki-Regular.otf);
+}
+.czcionka-japoki
+{
+font-family: Japokki;
+}
+
+.czcionka-wycentrowana
+{
+	text-align: center;
+}
+
+

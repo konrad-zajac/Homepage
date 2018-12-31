@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<style>
+		.druga_tabela td
+	{
+	padding: 2%;
+			border: 1px black solid;
+	}
+		#numery
+		{
+			padding-left: 5%;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container jumbotron">
+		Crop is a function, which takes in one input argumemt (large picture) and returns one argument (small area of that picture)</br>
+		
+		<table  style="width: 100%" class="table-bordered">
+
+		<tr style="text-align:center; background-background-color: black; background-color: white">
+			<td>Input</td>
+			<td>Ouput</td>
+		</tr>
+
+		<tr style="background-background-color: black ; text-align: center; ">
+			<td style="padding: 5%">
+				<img width="300" height="300" src="../manuale_img/imMag/lenac.jpg">
+			</td>
+
+
+			<td>
+				<img width="300" height="300" src="../manuale_img/imMag/lena_min.jpg">
+			</td>
+
+		</tr>
+	</table>
+
+<div class="container-fluid" style="padding: 3%";>
+
+	<code style="margin-left: 11%">
+		convert input.png -crop
+		<span style="background-color:red">200</span>
+		x<span style="background-color:blue">200</span>+<span style="background-color:green">200</span>+<span style="background-color:orange">200</span>  output.png
+	</code>
+</div>
+	<table class="druga_tabela">
+
+		<tr>
+				<td style="width: 11%;font-size: 50%;padding: 0%">
+					Parameter number
+				</td>
+				<td style="width: 11%;font-size: 50%;padding: 0%">
+					Parameter color
+				</td>
+				<td style="width: 110%; text-align: center">
+					Commentary
+				</td>
+		</tr>
+		<tr >
+			<td id="numery">
+			1
+			</td>
+
+			<td >
+				<span style="background-color:red">200</span>
+			</td>
+
+			<td>
+				The information about the outputs width</br> in pixels.
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+			2
+			</td>
+
+			<td>
+				<span style="background-color:blue">200</span>
+			</td>
+
+			<td>
+The information about the outputs height</br> in pixels.
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+			3
+			</td>
+
+			<td>
+				<span style="background-color:green">200</span>
+			</td>
+
+			<td>
+The information about the X position of the croping area from the beginning of an image width in pixels.
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+			4
+			</td>
+
+			<td>
+				<span style="background-color:orange">200</span>
+			</td>
+
+			<td>
+The information about the Y position of the croping area from the beginning of an image width in pixels.
+			</td>
+		</tr>
+
+	</table>
+	</div>
+</body>

@@ -1,0 +1,110 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $wczesnie = $.now();
+
+
+                $("button").click(function(){
+                    $pozno = $.now();
+                    $teraz = $pozno - $wczesnie ;
+                    alert("zakonczono w " + Math.round($teraz/10)/100 + "sekund");
+                })});
+
+        </script>
+		<link rel="stylesheet" type="text/css" href="../test.css">
+    </head>
+    <body>
+
+    <div style="margin-left: 40%" class="container">
+
+        <h1 style="margin-left: 16%; ">Test 3a</h1>
+      
+
+    </div>
+    <div style="margin-left: 45%" class="container">
+
+
+        <form>
+		
+		
+            <div class="form-group">
+                <label for="email">imie:</label>
+                <input style="width: 30%" type="email" class="form-control" id="email">
+            </div>
+		
+		
+            <div class="form-group">
+                <label for="pwd">Nazwisko:</label>
+                <input style="width: 30%" type="password" class="form-control" id="pwd">
+            </div>
+		
+		
+		
+		
+            <div class="form-group">
+                <label for="email"> email:</label>
+                <input style="width: 30%" type="email" class="form-control" id="email">
+            </div>
+		
+		
+            <div class="form-group">
+                <label for="pwd">telefon:</label>
+                <input style="width: 30%" type="password" class="form-control" id="pwd">
+            </div>
+		
+		
+		
+		
+            <div class="form-group">
+                <label for="email">miasto:</label>
+                <input style="width: 30%" type="email" class="form-control" id="email">
+            </div>
+		
+		
+            <div class="form-group">
+                <label for="pwd">kod pocztowy:</label>
+                <input style="width: 30%" type="password" class="form-control" id="pwd">
+            </div>
+		
+		
+
+
+
+
+            <button class="submit" id="submit" type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+        <a style="margin-left: 11%;
+            margin-top: 40px"
+           href='test3b.html'
+           class="btn btn-lg btn-success mar">
+            <b>test 3b </b>
+            <i class="glyphicon glyphicon-arrow-right">
+            </i>
+
+        </a>
+
+    </div>
+    </body>
+
+    </html>

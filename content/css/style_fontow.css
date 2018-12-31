@@ -1,0 +1,31 @@
+@font-face
+{
+    font-family: Amatic;
+    src: url(../src/2.fonty/Amatic.ttf);
+}
+@font-face
+{
+    font-family: Bavro;
+    src: url(../src/2.fonty/Bavro.otf);
+}
+@font-face
+{
+    font-family: Butler;
+    src: url(../src/2.fonty/AHAMONO-Regular.otf);
+}
+@font-face
+
+{
+    font-family: Arvo;
+    src: url(../src/2.fonty/Arvo-Regular.ttf);
+}
+.tekst_o_mnie
+{
+    width: 200px;
+    word-wrap: break-word;
+}
+.portf
+{
+    font-size: 3vw;
+font-family: Caveat;
+}

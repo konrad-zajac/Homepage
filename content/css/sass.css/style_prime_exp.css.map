@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,UAAW;EACX,MAAM,EAHY,GAAG;EAIrB,KAAK,EAAE,IAAuB;EAC9B,MAAM,EAAE,WAA2B;;AAEnC,kBAAmB;EACnB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,YAAY;EACrB,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,CAAC;;AAEV,qBAAsB;EACpB,OAAO,EAAE,YAAY;EACrB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;;AAGX,kBAAkB;EAChB,MAAM,EAAE,SAAyB;EACjC,KAAK,EAAE,IAAuB",
+"sources": ["../../resourses/assets/scss/style_prime_exp.scss"],
+"names": [],
+"file": "style_prime_exp.css"
+}

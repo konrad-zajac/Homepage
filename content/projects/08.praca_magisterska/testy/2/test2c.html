@@ -1,0 +1,393 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $wczesnie = $.now();
+
+
+                $("input").click(function(){
+                    $pozno = $.now();
+                    $teraz = $pozno - $wczesnie ;
+                    alert("zakonczono w " + Math.round($teraz/10)/100 + "sekund");
+                })});
+
+        </script>
+
+		<link rel="stylesheet" type="text/css" href="../test.css">
+    </head>
+    <body>
+
+    <div style="margin-left: 40%" class="container">
+
+        <h1 style="margin-left: 16%; ">Test 2c</h1>
+       
+
+
+    </div>
+    <div style="margin-left: 30%" class="container">
+
+
+        <form style="margin-left: 20%" id="myForm" method="post" action="test2a.html">
+            <table class="table-bordered">
+                <thead>
+                <tr>
+                    <td colspan="3" style="text-align: center">
+                        Wybierz swój ulubiony kolor.
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="dwa">Wybór</th>
+                    <th  class="dwa" colspan="2">Kolor</th>
+
+                </tr>
+                </thead>
+
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        jasno-czerwony
+                    </td>
+                    <td class="trzy" style=" background-color: lightcoral ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        czerwony
+                    </td>
+                    <td class="trzy" style=" background-color: #FF0000 ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        ciemno-czerwony
+                    </td>
+                    <td class="trzy" style=" background-color: darkred ">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        jasno-niebieski
+
+                    </td>
+                    <td class="trzy" style=" background-color: #0099FF ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" name="gender" value="male">
+                    </td>
+                    <td class="trzy">
+                        niebieski
+                    </td>
+                    <td class="jeden" style="background-color: #0044ff">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        ciemno-niebieski
+                    </td>
+                    <td class="trzy" style=" background-color: #0000FF ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        jasno-zielony
+                    </td>
+                    <td class="trzy" style=" background-color: #80ffaa ">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" name="gender" value="male">
+                    </td>
+                    <td class="trzy">
+                        zielony
+                    </td>
+                    <td class="jeden" style="background-color: green">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        ciemno-zielony
+                    </td>
+                    <td class="trzy" style=" background-color: #009933 ">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        jasno-żółty
+                    </td>
+                    <td class="trzy" style=" background-color: #ffff66 ">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        żółty
+                    </td>
+                    <td class="trzy" style=" background-color: #FFFF00 ">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        ciemnno-żółty
+                    </td>
+                    <td class="trzy" style=" background-color: #999000 ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        jasno-fioletowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #b366ff ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        fioletowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #8000FF ">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        jasno-pomarańczowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #ffa366 ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        pomarańczowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #ff6600 ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        ciemno-pomarańczowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #993d00 ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        jasno-różowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #ff66ff ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        różowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #ff00ff">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        ciemno-różowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #990099 ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        jasno-brązowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #ff9966 ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        brązowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #ff5500 ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        ciemno-brązowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #993300 ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        jasno-granatowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #4d88ff ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        granatowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #0055ff ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        jasno-seledynowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #c7ebc9 ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        seledynowy
+                    </td>
+                    <td class="trzy" style=" background-color: #ACE1AF">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        ciemno-seledynowy
+                    </td>
+                    <td class="trzy" style=" background-color:  #69c96e">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        biały
+                    </td>
+                    <td class="trzy" style=" background-color:  #FFF  ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dwa">
+                        <input type="radio" >
+                    </td>
+                    <td class="trzy">
+                        czarny
+                    </td>
+                    <td class="trzy" style=" background-color: #000 ">
+                    </td>
+                </tr>
+
+
+            </table>
+        </form>
+
+        <a style="margin-left: 32%;
+            margin-top: 40px"
+           href='test2d.html'
+           class="btn btn-lg btn-success mar">
+            <b>test 2d </b>
+            <i class="glyphicon glyphicon-arrow-right">
+            </i>
+
+        </a>
+
+    </div>
+    </body>
+
+    </html>
