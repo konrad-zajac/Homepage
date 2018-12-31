@@ -153,13 +153,54 @@ and willing to learn new technologies (my applications might confirm that).
                         </div>
                     </form>
 
-                                <?
                 </div>
             </div>
         </div>
-    <? require 'section_contact.php';?>
    </section>
-    <? require 'section_footer.php';?>
+
+    <footer class='text-center'>
+        <div class='footer-above'>
+            <div class='container'>
+                <div class='row'>
+                    <div style='font-family: Bavro;     letter-spacing: 3px;' class='lokacja footer-col col-md-4'>
+                        <h3 style='font-family: Bavro'>Location</h3>
+                        <p>Szczecin
+                            <br>Poland</p>
+                    </div>
+                    <div class='footer-col col-md-4'>
+                        <h3 style='font-family: Bavro'>Around the Web</h3>
+                        <ul class='list-inline'>
+                            <li>
+                                <a href='https://www.youtube.com/channel/UCpWZ0V7IryDrwKu9NcbWsRw?view_as=subscriber' role='youtube' class='btn-social btn-outline'><i class='fa fab fa-youtube'></i></a>
+                            </li>
+                            <li>
+                                <a href='https://www.facebook.com/konrad117' class='btn-social btn-outline' role='facebook'><i class='fa fa-fw fa-facebook'></i></a>
+                            </li>
+                            <li>
+                                <a href='https://plus.google.com/u/0/+KonradZając' class='btn-social btn-outline' role='googleplus'><i class='fa fa-fw fa-google-plus'></i></a>
+                            </li>
+                            <li>
+                                <a href='https://twitter.com/konradzajac' class='btn-social btn-outline' role='twitter'><i class='fa fa-fw fa-twitter'></i></a>
+                            </li>
+                            <li>
+                                <a href='https://www.linkedin.com/in/konrad-zając-7b95b587?trk=hp-identity-photo' class='btn-social btn-outline' role='linkedin'><i class='fa fa-fw fa-linkedin'></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style='font-family: Bavro;     letter-spacing: 3px;' class='lokacja footer-col col-md-4'>
+                        <h3 style='font-family: Bavro'> https <i class='glyphicon glyphicon-lock'></i></h3>
+                </div>
+            </div>
+        </div>
+        <div class='footer-below'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-lg-12'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
         <a class="btn btn-primary" href="#page-top">
